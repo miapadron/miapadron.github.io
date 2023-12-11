@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100&family=Playfair+Display:wght@500&display=swap');
+
+/* 
+font-family: 'DM Sans', sans-serif;
+font-family: 'Playfair Display', serif;
+*/
+
+body {
+    background: #FFE8E8;
+    margin: 10px;
+}
+p {
+    font-family: 'DM Sans', sans-serif;
+    color: #000000;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    font-size: 20px;
+}
+
+.products p:hover {
+    background-color: #D76E6E;
+}
+
+main {
+    padding: 50px
+}
+main h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    color: #AA3939;
+}
+
+h4 {
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+    color: #AA3939;
+}
+
+/* grid css */
+
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 50px;
+    padding-right: 20px;
+    grid-template-areas: 
+    ".collagenmask  .glowserum  .mask"
+    ".serum         .bodyset    .glowmask";
+}
+
+.collagenmask {
+    grid-area: collagenmask;
+
+}
+.glowserum {
+    grid-area: glowserum;
+}
+.mask {
+    grid-area: mask;
+}
+.serum {
+    grid-area: serum;
+}
+.bodyset {
+    grid-area: bodyset;
+}
+.glowmask {
+    grid-area: glowmask;
+}
+
+
+footer p {
+    background-color: #FFE8E8;
+    font-family: 'Playfair Display', serif;
+    padding: 10px;
+    color: #AA3939;
+    text-align: right;
+}
